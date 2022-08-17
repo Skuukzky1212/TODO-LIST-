@@ -5,9 +5,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root {
+  width: 50%;
+}
+
+.checkIcon {
+  display: none;
+}
+
+.checkIcon:hover {
+  background-color: #e2e2e2;
+} 
+
+.todoBtn:hover .checkIcon {
+  display: inherit;
+}
+
+.todoBtn.todoBtn-completed, 
+.todoBtn.todoBtn-completed:hover {
+  text-decoration: line-through;
+}
+
+.todoBtn.todoBtn-completed .checkIcon {
+  display: none;
+}
+
+
+
+
